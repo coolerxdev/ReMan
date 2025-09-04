@@ -5,10 +5,15 @@ Repo add-on (např. repository.spaceflix) pak stačí nainstalovat v Kodi přes 
 
 # Funkce
 ✅ Upload .zip balíčku addonu (plugin/script/skin)
+
 ✅ Volitelné přepsání verze uvnitř addon.xml (pokud nezadáte, ponechá verzi ze ZIPu)
+
 ✅ Automatická struktura:repo/<addon.id>/<addon.id>-<version>.zip + *.zip.md5
+
 ✅ Generování addons.xml a addons.xml.md5 v kořeni repa
+
 ✅ Vytvoření instalačního ZIPu repozitáře s <dir> bloky pro Kodi 21+ i Kodi 20.x
+
 ✅ Jednoduché heslo pro přístup (volitelné)
 
 # Požadavky
