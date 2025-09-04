@@ -1,6 +1,7 @@
 # ReMan – jednoduchý správce KODI repozitáře (PHP, single-file)
 Tento projekt je jednosouborová (Bootstrap) PHP aplikace pro správu vlastního KODI repozitáře.
-Umí nahrát ZIP s addonem, volitelně přepsat verzi v addon.xml, uložit správnou strukturu, automaticky vygenerovat addons.xml + addons.xml.md5 a vytvořit instalační ZIP repozitáře (repo add-on) s novým schématem <dir> pro Kodi 21/20.
+Umí nahrát ZIP s addonem, volitelně přepsat verzi v addon.xml, uložit správnou strukturu, automaticky vygenerovat addons.xml + addons.xml.md5 a vytvořit instalační ZIP repozitáře (repo add-on) s novým schématem pro Kodi 21/20.
+
 Repo add-on (např. repository.spaceflix) pak stačí nainstalovat v Kodi přes „Instalovat ze ZIP“ a přidat tak repozitář do Kodi.
 
 # Funkce
@@ -75,13 +76,21 @@ Doplňky → Instalovat ze ZIP souboru.
 
 # Struktura, kterou skript udržuje
 repo/
+
  ├─ addons.xml
+ 
  ├─ addons.xml.md5
+ 
  ├─ <addon.id>/
+ 
  │   ├─ <addon.id>-<verze>.zip
+ 
  │   └─ <volitelně> icon.png
+ 
  └─ <repository.id>/
+ 
      └─ <repository.id>-<verze>.zip   (instalační ZIP repozitáře)
+     
 
 addons.xml je složený z addon.xml nejnovějších verzí jednotlivých addonů.
 Vedle každého ZIPu se generuje i odpovídající .zip.md5.
